@@ -1,0 +1,14 @@
+dcraw.c
+DSC_5031.NEF
+DSC_5032.NEF
+DSC_5033.NEF
+DSC_5034.NEF
+DSC_5035.NEF
+DSC_5037.NEF
+DSC_5038.NEF
+DSC_5039.NEF
+/home/iangarcia/.phoronix-test-suite/test-profiles/pts/dcraw-1.1.1/install.sh: line 4: CFLAGS: command not found
+dcraw.c: In function ‘identify’:
+dcraw.c:6624:22: warning: overflow in conversion from ‘unsigned int’ to ‘int’ changes value from ‘filters = 4294967295’ to ‘-1’ [-Woverflow]
+ 6624 |   tiff_flip = flip = filters = -1; /* 0 is valid, so -1 is unknown */
+      |                      ^~~~~~~

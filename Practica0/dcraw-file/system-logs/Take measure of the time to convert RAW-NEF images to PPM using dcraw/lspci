@@ -1,0 +1,175 @@
+Slot:	00:00.0
+Class:	Host bridge [0600]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Family 16h (Models 30h-3fh) Processor Root Complex [1566]
+SVendor:	Hewlett-Packard Company [103c]
+SDevice:	Device [81e5]
+
+Slot:	00:01.0
+Class:	VGA compatible controller [0300]
+Vendor:	Advanced Micro Devices, Inc. [AMD/ATI] [1002]
+Device:	Mullins [Radeon R4/R5 Graphics] [9851]
+SVendor:	Hewlett-Packard Company [103c]
+SDevice:	Device [81e5]
+Rev:	45
+Driver:	radeon
+Module:	radeon
+Module:	amdgpu
+
+Slot:	00:01.1
+Class:	Audio device [0403]
+Vendor:	Advanced Micro Devices, Inc. [AMD/ATI] [1002]
+Device:	Kabini HDMI/DP Audio [9840]
+SVendor:	Hewlett-Packard Company [103c]
+SDevice:	Device [81e5]
+Driver:	snd_hda_intel
+Module:	snd_hda_intel
+
+Slot:	00:02.0
+Class:	Host bridge [0600]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Family 16h (Models 30h-3fh) Host Bridge [156b]
+
+Slot:	00:02.2
+Class:	PCI bridge [0604]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Family 16h Processor Functions 5:1 [1439]
+Driver:	pcieport
+
+Slot:	00:02.3
+Class:	PCI bridge [0604]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Family 16h Processor Functions 5:1 [1439]
+Driver:	pcieport
+
+Slot:	00:08.0
+Class:	Encryption controller [1080]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Kabini/Mullins PSP-Platform Security Processor [1537]
+SVendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+SDevice:	Kabini/Mullins PSP-Platform Security Processor [1537]
+Driver:	ccp
+Module:	ccp
+
+Slot:	00:10.0
+Class:	USB controller [0c03]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	FCH USB XHCI Controller [7814]
+SVendor:	Hewlett-Packard Company [103c]
+SDevice:	Device [81e5]
+Rev:	11
+ProgIf:	30
+Driver:	xhci_hcd
+
+Slot:	00:11.0
+Class:	SATA controller [0106]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	FCH SATA Controller [AHCI mode] [7804]
+SVendor:	Hewlett-Packard Company [103c]
+SDevice:	Device [81e5]
+Rev:	39
+ProgIf:	01
+Driver:	ahci
+
+Slot:	00:12.0
+Class:	USB controller [0c03]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	FCH USB EHCI Controller [7808]
+SVendor:	Hewlett-Packard Company [103c]
+SDevice:	Device [81e5]
+Rev:	39
+ProgIf:	20
+Driver:	ehci-pci
+
+Slot:	00:13.0
+Class:	USB controller [0c03]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	FCH USB EHCI Controller [7808]
+SVendor:	Hewlett-Packard Company [103c]
+SDevice:	Device [81e5]
+Rev:	39
+ProgIf:	20
+Driver:	ehci-pci
+
+Slot:	00:14.0
+Class:	SMBus [0c05]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	FCH SMBus Controller [780b]
+SVendor:	Hewlett-Packard Company [103c]
+SDevice:	Device [81e5]
+Rev:	42
+Driver:	piix4_smbus
+Module:	i2c_piix4
+Module:	sp5100_tco
+
+Slot:	00:14.2
+Class:	Audio device [0403]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	FCH Azalia Controller [780d]
+SVendor:	Hewlett-Packard Company [103c]
+SDevice:	Device [81e5]
+Rev:	02
+Driver:	snd_hda_intel
+Module:	snd_hda_intel
+
+Slot:	00:14.3
+Class:	ISA bridge [0601]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	FCH LPC Bridge [780e]
+SVendor:	Hewlett-Packard Company [103c]
+SDevice:	Device [81e5]
+Rev:	11
+
+Slot:	00:18.0
+Class:	Host bridge [0600]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Family 16h (Models 30h-3fh) Processor Function 0 [1580]
+
+Slot:	00:18.1
+Class:	Host bridge [0600]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Family 16h (Models 30h-3fh) Processor Function 1 [1581]
+
+Slot:	00:18.2
+Class:	Host bridge [0600]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Family 16h (Models 30h-3fh) Processor Function 2 [1582]
+
+Slot:	00:18.3
+Class:	Host bridge [0600]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Family 16h (Models 30h-3fh) Processor Function 3 [1583]
+Driver:	k10temp
+Module:	k10temp
+
+Slot:	00:18.4
+Class:	Host bridge [0600]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Family 16h (Models 30h-3fh) Processor Function 4 [1584]
+Driver:	fam15h_power
+Module:	fam15h_power
+
+Slot:	00:18.5
+Class:	Host bridge [0600]
+Vendor:	Advanced Micro Devices, Inc. [AMD] [1022]
+Device:	Family 16h (Models 30h-3fh) Processor Function 5 [1585]
+
+Slot:	01:00.0
+Class:	Ethernet controller [0200]
+Vendor:	Realtek Semiconductor Co., Ltd. [10ec]
+Device:	RTL810xE PCI Express Fast Ethernet controller [8136]
+SVendor:	Hewlett-Packard Company [103c]
+SDevice:	Device [81e5]
+Rev:	07
+Driver:	r8169
+Module:	r8169
+
+Slot:	05:00.0
+Class:	Network controller [0280]
+Vendor:	Realtek Semiconductor Co., Ltd. [10ec]
+Device:	RTL8723BE PCIe Wireless Network Adapter [b723]
+SVendor:	Hewlett-Packard Company [103c]
+SDevice:	Device [81c1]
+Driver:	rtl8723be
+Module:	rtl8723be
+

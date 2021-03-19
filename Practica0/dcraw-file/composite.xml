@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.2.2-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>dcraw-file</Title>
+    <LastModified>2021-03-16 23:01:24</LastModified>
+    <TestClient>Phoronix Test Suite v10.2.2 (Harstad)</TestClient>
+    <Description>AMD A8-7410 APU testing with a HP 81E5 (F.10 BIOS) and AMD Radeon R4/R5 512MB on Fedora 32 via the Phoronix Test Suite.</Description>
+  </Generated>
+  <System>
+    <Identifier>Take measure of the time to convert RAW-NEF images to PPM using dcraw</Identifier>
+    <Hardware>Processor: AMD A8-7410 APU @ 2.20GHz (4 Cores), Motherboard: HP 81E5 (F.10 BIOS), Chipset: AMD 16h, Memory: 3584MB, Disk: 500GB Western Digital WD5000LPCX-6, Graphics: AMD Radeon R4/R5 512MB, Audio: AMD Kabini HDMI/DP, Network: Realtek RTL810xE PCI + Realtek RTL8723BE PCIe</Hardware>
+    <Software>OS: Fedora 32, Kernel: 5.8.6-201.fc32.x86_64 (x86_64), Desktop: GNOME Shell 3.36.5, Display Server: X Server 1.20.8 + Wayland, OpenGL: 4.5 Mesa 20.1.7 (LLVM 10.0.1), Compiler: Clang 10.0.0, File-System: ext4, Screen Resolution: 1366x768</Software>
+    <User>iangarcia</User>
+    <TimeStamp>2021-03-16 22:34:03</TimeStamp>
+    <TestClientVersion>10.2.2</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"cpu-scaling-governor":"acpi-cpufreq ondemand (Boost: Enabled)","cpu-microcode":"0x7030105","kernel-extra-details":"Transparent Huge Pages: madvise","security":"SELinux + itlb_multihit: Not affected + l1tf: Not affected + mds: Not affected + meltdown: Not affected + spec_store_bypass: Mitigation of SSB disabled via prctl and seccomp + spectre_v1: Mitigation of usercopy\/swapgs barriers and __user pointer sanitization + spectre_v2: Mitigation of Full AMD retpoline STIBP: disabled RSB filling + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/dcraw-1.1.1</Identifier>
+    <Title>dcraw</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>RAW To PPM Image Conversion</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Take measure of the time to convert RAW-NEF images to PPM using dcraw</Identifier>
+        <Value>131.769</Value>
+        <RawString>119.166:127.403:131.576:131.553:131.706:138.179:132.401:132.789:136.149:133.285:134.433:132.585</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"119.17:127.40:131.58:131.55:131.71:138.18:132.40:132.79:136.12:133.29:134.43:132.58"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

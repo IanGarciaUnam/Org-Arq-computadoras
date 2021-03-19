@@ -1,0 +1,1 @@
+BOOT_IMAGE=(hd0,gpt6)/vmlinuz-5.8.6-201.fc32.x86_64 root=/dev/mapper/fedora_localhost--live-root ro resume=/dev/mapper/fedora_localhost--live-swap rd.lvm.lv=fedora_localhost-live/root rd.lvm.lv=fedora_localhost-live/swap rhgb quiet

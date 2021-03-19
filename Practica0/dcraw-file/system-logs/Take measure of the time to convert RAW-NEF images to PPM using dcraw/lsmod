@@ -1,0 +1,130 @@
+Module                  Size  Used by
+uinput                 20480  0
+rfcomm                 90112  4
+xt_CHECKSUM            16384  1
+xt_MASQUERADE          20480  3
+xt_conntrack           16384  1
+ipt_REJECT             16384  2
+nf_nat_tftp            16384  0
+nf_conntrack_tftp      20480  3 nf_nat_tftp
+tun                    57344  1
+bridge                233472  0
+stp                    16384  1 bridge
+llc                    16384  2 bridge,stp
+ccm                    20480  6
+nft_objref             16384  2
+nf_conntrack_netbios_ns    16384  1
+nf_conntrack_broadcast    16384  1 nf_conntrack_netbios_ns
+nft_fib_inet           16384  1
+nft_fib_ipv4           16384  1 nft_fib_inet
+nft_fib_ipv6           16384  1 nft_fib_inet
+nft_fib                16384  3 nft_fib_ipv6,nft_fib_ipv4,nft_fib_inet
+nft_reject_inet        16384  5
+nf_reject_ipv4         16384  2 nft_reject_inet,ipt_REJECT
+nf_reject_ipv6         20480  1 nft_reject_inet
+nft_reject             16384  1 nft_reject_inet
+nft_ct                 20480  24
+nft_chain_nat          16384  4
+ip6table_nat           16384  1
+ip6table_mangle        16384  1
+ip6table_raw           16384  0
+ip6table_security      16384  0
+iptable_nat            16384  1
+nf_nat                 49152  5 ip6table_nat,nf_nat_tftp,nft_chain_nat,iptable_nat,xt_MASQUERADE
+nf_conntrack          163840  8 xt_conntrack,nf_nat,nf_conntrack_tftp,nft_ct,nf_conntrack_netbios_ns,nf_nat_tftp,nf_conntrack_broadcast,xt_MASQUERADE
+nf_defrag_ipv6         24576  1 nf_conntrack
+nf_defrag_ipv4         16384  1 nf_conntrack
+iptable_mangle         16384  1
+iptable_raw            16384  0
+iptable_security       16384  0
+ip_set                 57344  0
+nf_tables             237568  412 nft_ct,nft_reject_inet,nft_fib_ipv6,nft_objref,nft_fib_ipv4,nft_chain_nat,nft_reject,nft_fib,nft_fib_inet
+nfnetlink              16384  3 nf_tables,ip_set
+ip6table_filter        16384  1
+ip6_tables             32768  5 ip6table_filter,ip6table_raw,ip6table_nat,ip6table_mangle,ip6table_security
+iptable_filter         16384  1
+cmac                   16384  4
+bnep                   28672  2
+sunrpc                565248  1
+vfat                   20480  1
+fat                    81920  1 vfat
+squashfs               69632  10
+loop                   36864  20
+dm_multipath           40960  0
+scsi_dh_rdac           16384  0
+scsi_dh_emc            16384  0
+scsi_dh_alua           20480  0
+uvcvideo              114688  0
+btusb                  57344  0
+videobuf2_vmalloc      20480  1 uvcvideo
+btrtl                  24576  1 btusb
+videobuf2_memops       20480  1 videobuf2_vmalloc
+videobuf2_v4l2         28672  1 uvcvideo
+btbcm                  20480  1 btusb
+videobuf2_common       57344  2 videobuf2_v4l2,uvcvideo
+btintel                32768  1 btusb
+bluetooth             667648  33 btrtl,btintel,btbcm,bnep,btusb,rfcomm
+videodev              274432  3 videobuf2_v4l2,uvcvideo,videobuf2_common
+mc                     61440  4 videodev,videobuf2_v4l2,uvcvideo,videobuf2_common
+rtl8723be             106496  0
+snd_hda_codec_realtek   139264  1
+snd_hda_codec_generic    98304  1 snd_hda_codec_realtek
+btcoexist             167936  1 rtl8723be
+ledtrig_audio          16384  2 snd_hda_codec_generic,snd_hda_codec_realtek
+rtl8723_common         28672  1 rtl8723be
+rtl_pci                32768  1 rtl8723be
+snd_hda_codec_hdmi     73728  1
+snd_hda_intel          57344  7
+snd_intel_dspcfg       24576  1 snd_hda_intel
+rtlwifi               102400  4 rtl_pci,rtl8723be,btcoexist,rtl8723_common
+snd_hda_codec         163840  4 snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec_realtek
+ecdh_generic           16384  1 bluetooth
+ecc                    36864  1 ecdh_generic
+edac_mce_amd           32768  0
+snd_hda_core          110592  5 snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec,snd_hda_codec_realtek
+snd_hwdep              16384  1 snd_hda_codec
+mac80211             1015808  3 rtl_pci,rtl8723be,rtlwifi
+snd_seq                86016  0
+kvm_amd               114688  0
+snd_seq_device         16384  1 snd_seq
+kvm                   823296  1 kvm_amd
+irqbypass              16384  1 kvm
+cfg80211              876544  2 rtlwifi,mac80211
+snd_pcm               135168  5 snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec,snd_hda_core
+hp_wmi                 16384  0
+snd_timer              49152  2 snd_seq,snd_pcm
+snd                   106496  23 snd_hda_codec_generic,snd_seq,snd_seq_device,snd_hda_codec_hdmi,snd_hwdep,snd_hda_intel,snd_hda_codec,snd_hda_codec_realtek,snd_timer,snd_pcm
+sparse_keymap          16384  1 hp_wmi
+soundcore              16384  1 snd
+libarc4                16384  1 mac80211
+rfkill                 28672  8 hp_wmi,bluetooth,cfg80211
+joydev                 28672  0
+pcspkr                 16384  0
+wmi_bmof               16384  0
+sp5100_tco             20480  0
+i2c_scmi               20480  0
+hp_wireless            16384  0
+acpi_cpufreq           28672  0
+i2c_piix4              28672  0
+k10temp                16384  0
+fam15h_power           16384  0
+ip_tables              32768  5 iptable_filter,iptable_security,iptable_raw,iptable_nat,iptable_mangle
+amdgpu               5865472  0
+iommu_v2               20480  1 amdgpu
+gpu_sched              40960  1 amdgpu
+radeon               1638400  13
+i2c_algo_bit           16384  2 amdgpu,radeon
+drm_kms_helper        262144  2 amdgpu,radeon
+cec                    61440  1 drm_kms_helper
+ttm                   122880  2 amdgpu,radeon
+crct10dif_pclmul       16384  1
+drm                   622592  11 gpu_sched,drm_kms_helper,amdgpu,radeon,ttm
+crc32_pclmul           16384  0
+crc32c_intel           24576  6
+ghash_clmulni_intel    16384  0
+serio_raw              20480  0
+ccp                   106496  1 kvm_amd
+r8169                  98304  0
+wmi                    36864  2 hp_wmi,wmi_bmof
+video                  53248  0
+fuse                  139264  3
